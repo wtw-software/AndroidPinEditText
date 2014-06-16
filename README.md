@@ -23,10 +23,12 @@ AndroidPinEditView
 
 ## Styling
 Add new namespace to root element of layout XML file: 
+
 ```xmlns:app="http://schemas.android.com/apk/res-auto```
 
 
 Then adjust attributes:
+
 ```
 <no.wtw.android.androidpinedittext.view.PinEditText
         ...
