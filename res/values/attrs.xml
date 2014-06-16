@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="AndroidPinEditText">
+        <attr name="pinLength" format="integer"/>
+        <attr name="digitSize" format="dimension"/>
+        <attr name="digitMargin" format="dimension"/>
+        <attr name="digitDotRadius" format="dimension"/>
+        <attr name="digitBackgroundDefault" format="reference"/>
+        <attr name="digitBackgroundFocused" format="reference"/>
+    </declare-styleable>
+</resources>
