@@ -24,7 +24,9 @@ AndroidPinEditView
 ## Styling
 Add new namespace to root element of layout XML file: 
 
-```xmlns:app="http://schemas.android.com/apk/res-auto```
+```
+xmlns:app="http://schemas.android.com/apk/res-auto
+```
 
 
 Then adjust attributes:
