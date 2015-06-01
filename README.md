@@ -21,6 +21,10 @@ AndroidPinEditView
 </no.wtw.android.androidpinedittext.view.PinEditText>
 ```
 
+```
+compile 'no.wtw.android:android-pin-edit-text:2'
+```
+
 ## Styling
 Add new namespace to root element of layout XML file: 
 
