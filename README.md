@@ -5,8 +5,8 @@ AndroidPinEditView
 <dependency>
   <groupId>no.wtw.android</groupId>
   <artifactId>android-pin-edit-text</artifactId>
-  <type>apklib</type>
-  <version>xxx</version>
+  <type>aar</type>
+  <version>2</version>
 </dependency>
 ```
 
