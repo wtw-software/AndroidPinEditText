@@ -6,7 +6,7 @@
 
     <groupId>no.wtw.android</groupId>
     <artifactId>android-pin-edit-text</artifactId>
-    <version>2</version>
+    <version>3</version>
     <packaging>aar</packaging>
     <name>AndroidPinEditText</name>
 
@@ -44,14 +44,9 @@
         <dependency>
             <groupId>android</groupId>
             <artifactId>android</artifactId>
-            <version>4.4.2_r2</version>
+            <version>5.1.1_r2</version>
             <scope>provided</scope>
         </dependency>
-		<dependency>
-			<groupId>com.android.support</groupId>
-			<artifactId>support-v4</artifactId>
-			<version>22.1.1</version>
-		</dependency>
     </dependencies>
 
     <build>
@@ -102,7 +97,7 @@
                 <artifactId>android-maven-plugin</artifactId>
                 <configuration>
                     <sdk>
-                        <platform>19</platform>
+                        <platform>22</platform>
                     </sdk>
                 </configuration>
                 <extensions>true</extensions>
