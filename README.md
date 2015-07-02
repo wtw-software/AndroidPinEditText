@@ -6,7 +6,7 @@ AndroidPinEditView
   <groupId>no.wtw.android</groupId>
   <artifactId>android-pin-edit-text</artifactId>
   <type>aar</type>
-  <version>2</version>
+  <version>3</version>
 </dependency>
 ```
 
@@ -22,7 +22,7 @@ AndroidPinEditView
 ```
 
 ```
-compile 'no.wtw.android:android-pin-edit-text:2'
+compile 'no.wtw.android:android-pin-edit-text:3'
 ```
 
 ## Styling
