@@ -1,6 +1,5 @@
 package no.wtw.android.androidpinedittext.view;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -44,7 +43,6 @@ public class PinEditText extends EditText {
         init(context, attrs);
     }
 
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     private void init(Context context, AttributeSet attrs) {
         displayMetrics = getResources().getDisplayMetrics();
         setCursorVisible(false);
@@ -70,13 +68,12 @@ public class PinEditText extends EditText {
             Drawable backgroundDefault = a.getDrawable(R.styleable.AndroidPinEditText_digitBackgroundDefault);
             Drawable backgroundFocused = a.getDrawable(R.styleable.AndroidPinEditText_digitBackgroundFocused);
             if (!isInEditMode()) {
-
                 if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-                    digitBackgroundDefault = backgroundDefault != null ? backgroundDefault : getContext().getDrawable(R.drawable.pin_digit_background_default);
-                    digitBackgroundFocused = backgroundFocused != null ? backgroundFocused : getContext().getDrawable(R.drawable.pin_digit_background_focused);
+                    digitBackgroundDefault = backgroundDefault != null ? backgroundDefault : getContext().getDrawable(no.wtw.android.androidpinedittext.R.drawable.pin_digit_background_default);
+                    digitBackgroundFocused = backgroundFocused != null ? backgroundFocused : getContext().getDrawable(no.wtw.android.androidpinedittext.R.drawable.pin_digit_background_focused);
                 } else {
-                    digitBackgroundDefault = backgroundDefault != null ? backgroundDefault : getResources().getDrawable(R.drawable.pin_digit_background_default);
-                    digitBackgroundFocused = backgroundFocused != null ? backgroundFocused : getResources().getDrawable(R.drawable.pin_digit_background_focused);
+                    digitBackgroundDefault = backgroundDefault != null ? backgroundDefault : getResources().getDrawable(no.wtw.android.androidpinedittext.R.drawable.pin_digit_background_default);
+                    digitBackgroundFocused = backgroundFocused != null ? backgroundFocused : getResources().getDrawable(no.wtw.android.androidpinedittext.R.drawable.pin_digit_background_focused);
                 }
                 digitBackgroundDefault.setBounds(0, 0, (int) size, (int) size);
                 digitBackgroundFocused.setBounds(0, 0, (int) size, (int) size);
