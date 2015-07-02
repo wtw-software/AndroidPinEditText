@@ -1,5 +1,6 @@
 package no.wtw.android.androidpinedittext.view;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.TypedArray;
 import android.graphics.Canvas;
@@ -43,6 +44,7 @@ public class PinEditText extends EditText {
         init(context, attrs);
     }
 
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     private void init(Context context, AttributeSet attrs) {
         displayMetrics = getResources().getDisplayMetrics();
         setCursorVisible(false);
