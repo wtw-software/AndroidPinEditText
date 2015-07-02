@@ -47,6 +47,11 @@
             <version>4.4.2_r2</version>
             <scope>provided</scope>
         </dependency>
+		<dependency>
+			<groupId>com.android.support</groupId>
+			<artifactId>support-v4</artifactId>
+			<version>22.1.1</version>
+		</dependency>
     </dependencies>
 
     <build>

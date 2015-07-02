@@ -68,8 +68,8 @@ public class PinEditText extends EditText {
             Drawable backgroundDefault = a.getDrawable(R.styleable.AndroidPinEditText_digitBackgroundDefault);
             Drawable backgroundFocused = a.getDrawable(R.styleable.AndroidPinEditText_digitBackgroundFocused);
             if (!isInEditMode()) {
-                digitBackgroundDefault = backgroundDefault != null ? backgroundDefault : getResources().getDrawable(R.drawable.pin_digit_background_default);
-                digitBackgroundFocused = backgroundFocused != null ? backgroundFocused : getResources().getDrawable(R.drawable.pin_digit_background_focused);
+                digitBackgroundDefault = backgroundDefault != null ? backgroundDefault : ResourcesCompat.getDrawable(getResources(), R.drawable.pin_digit_background_default, null);
+                digitBackgroundFocused = backgroundFocused != null ? backgroundFocused : ResourcesCompat.getDrawable(getResources(), R.drawable.pin_digit_background_focused, null);
                 digitBackgroundDefault.setBounds(0, 0, (int) size, (int) size);
                 digitBackgroundFocused.setBounds(0, 0, (int) size, (int) size);
             }
