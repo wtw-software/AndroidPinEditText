@@ -1,14 +1,6 @@
-AndroidPinEditView
-==================
+# AndroidPinEditView
 
-```
-<dependency>
-  <groupId>no.wtw.android</groupId>
-  <artifactId>android-pin-edit-text</artifactId>
-  <type>aar</type>
-  <version>3</version>
-</dependency>
-```
+[![](https://jitpack.io/v/wtw-software/AndroidPinEditText.svg)](https://jitpack.io/#wtw-software/AndroidPinEditText)
 
 ## Usage
 
@@ -21,19 +13,7 @@ AndroidPinEditView
 </no.wtw.android.androidpinedittext.view.PinEditText>
 ```
 
-```
-compile 'no.wtw.android:android-pin-edit-text:3'
-```
-
 ## Styling
-Add new namespace to root element of layout XML file: 
-
-```
-xmlns:app="http://schemas.android.com/apk/res-auto
-```
-
-
-Then adjust attributes:
 
 ```
 <no.wtw.android.androidpinedittext.view.PinEditText
@@ -47,3 +27,20 @@ Then adjust attributes:
         app:digitBackgroundFocused="@drawable/background_focused"
         />
 ```
+
+License
+-------
+
+    Copyright 2014 WTW AS
+
+    Licensed under the Apache License, Version 2.0 (the "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS" BASIS,
+    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
