@@ -19,11 +19,11 @@ import android.view.animation.Animation;
 import android.view.animation.CycleInterpolator;
 import android.view.animation.TranslateAnimation;
 import android.widget.EditText;
+
 import no.wtw.android.androidpinedittext.R;
 
 public class PinEditText extends EditText {
 
-    private static final String TAG = PinEditText.class.getSimpleName();
     private Paint paint;
     private int pinLength;
     private float size;
@@ -49,8 +49,7 @@ public class PinEditText extends EditText {
         displayMetrics = getResources().getDisplayMetrics();
         setCursorVisible(false);
         setInputType(InputType.TYPE_CLASS_NUMBER | InputType.TYPE_NUMBER_VARIATION_PASSWORD);
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB)
-            setTextIsSelectable(false);
+        setTextIsSelectable(false);
         setLongClickable(false);
         dotRectangle = new RectF();
         paint = new Paint();
